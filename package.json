@@ -2,7 +2,6 @@
   "name": "wetube",
   "version": "1.0.0",
   "description": "clone Youtube with Vanilla and Nodejs",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/byunsangun/wetube.git"
@@ -14,6 +13,15 @@
   },
   "homepage": "https://github.com/byunsangun/wetube#readme",
   "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
